@@ -25,17 +25,39 @@
         }
         #slider-controls .slider-control {
             cursor: pointer;
-            padding: 5px;
+            padding: 10px 15px;
             margin-right: 5px;
             user-select: none;
         }
         #slider-controls .slider-control:hover {
-            color: #333;
-            text-decoration: underline;
+            color: white;
+            background-color: #cccccc;
+            padding: 10px 15px;
         }
         #slider-controls .slider-control.active {
-            color: red;
             font-weight: bold;
+            background-color: #f44336;
+            color: white;
+        }
+        body{
+            background-color: #f8da56;
+        }
+        #container{
+            background-color: white;
+            margin: 5% 25%;
+            padding: 80px;
+            border-radius: 20px;
+        }
+        .images{
+            border-radius: 10px;
+        }
+        #container h1{
+            font-weight: bold;
+            font-family: arial;
+            text-align: center;
+            font-size: 25px;
+            margin-top: -10px;
+            padding-bottom: 40px;
         }
     </style>
     <meta charset="UTF-8">
@@ -43,19 +65,22 @@
     <title>Image Slider</title>
 </head>
 <body>
-    <div id="slider">
-        <img src="https://picsum.photos/400/300?random=1" alt="Image 1">
-        <img src="https://picsum.photos/400/300?random=2" alt="Image 2">
-        <img src="https://picsum.photos/400/300?random=3" alt="Image 3">
-        <img src="https://picsum.photos/400/300?random=4" alt="Image 4">
-        <img src="https://picsum.photos/400/300?random=5" alt="Image 5">
-    </div>
-    <div id="slider-controls">
-        <span class="slider-control" data-index="0">1</span>
-        <span class="slider-control" data-index="1">2</span>
-        <span class="slider-control" data-index="2">3</span>
-        <span class="slider-control" data-index="3">4</span>
-        <span class="slider-control" data-index="4">5</span>
+    <div id="container">
+        <h1>Image Slider</h1>
+        <div id="slider">
+            <img class="images" src="https://picsum.photos/400/300?random=1" alt="Image 1">
+            <img class="images" src="https://picsum.photos/400/300?random=2" alt="Image 2">
+            <img class="images" src="https://picsum.photos/400/300?random=3" alt="Image 3">
+            <img class="images" src="https://picsum.photos/400/300?random=4" alt="Image 4">
+            <img class="images" src="https://picsum.photos/400/300?random=5" alt="Image 5">
+        </div>
+        <div id="slider-controls">
+            <span class="slider-control" data-index="0">1</span>
+            <span class="slider-control" data-index="1">2</span>
+            <span class="slider-control" data-index="2">3</span>
+            <span class="slider-control" data-index="3">4</span>
+            <span class="slider-control" data-index="4">5</span>
+        </div>
     </div>
 </body>
 <script>
